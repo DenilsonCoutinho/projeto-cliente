@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:rgb(255, 255, 255);
+   
+}
+.background-header{
+    background:#A64B2A;
+    height: 100px;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width:1200px;
+    margin: 0 auto;
+} 
+main{
+    max-width:1200px;
+    margin: 0 auto;
+}
+header h1{
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Square Peg', cursive;
+}
+nav ul{
+    display: flex;
+}
+nav ul a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li{
+    list-style: none;
+    margin: 10px;
+    color: white;
+    font-family:sans-serif;
+}
+ .container{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     max-width:1200px;
+     margin: 0 auto;
+     padding-top: 40px;
+     padding-bottom: 40px;
+     background: #F5F5F5;
+     border-left: 1px solidwhite ;
+     border-bottom: 1px solid white;
+     border-right: 1px solid white;
+     border-radius: 5px;
+     overflow: hidden;
+ }
+.container .my-photo{
+    border-radius:100%;
+    width: 300px;
+    background:#0b1704;
+    text-align: center;
+    margin-left:35px;
+}
+.container .my-photo img{
+    width: 300px
+ }
+.container .text-about{
+    max-width:400px;
+    
+    color:rgb(0, 0, 0);
+    
+}
+.container .text-about{
+    font-family: sans-serif;
+}
+
+.container .text-about button{
+    border:1px solid ;
+    color: #fff;
+    width: 120px;
+    height:30px;
+    border-radius:8px;
+    font-family: sans-serif;
+    font-size:15px;
+    background:#11120e;
+    padding-right: 10px;
+    margin-top:10px;
+    cursor:pointer;
+    animation: insta 1s infinite  ;
+    
+  
+}
+.container .text-about .insta .fa-brands{
+color:rgb(252, 252, 252);
+font-size:20px;
+margin-left: 10px;
+animation: insta2 5s infinite ;
+}
+.line{
+    border-bottom:1px solid ;
+    max-width:1000px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+.talk-about{
+    background:#F5F5F5;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align:center;
+    font-family: sans-serif;
+    
+}
+.travel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#F5F5F5;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.travel .sea-img{
+  
+    
+    transition:all 200ms ease-out;
+    border-radius:4px;
+    transform-style: preserve-3d;
+
+    }
+    .travel .sea-img:hover{
+        transform:translateZ(10px) rotateX(20deg)  rotateY(30deg);
+        }
+.travel .sea-img.active{
+width: 350px;
+transition:all 200ms ease-out;
+border-radius:10px;
+
+}
+.travel .business{
+  
+    
+    transition:all 200ms ease-out;
+    border-radius:4px;
+    transform-style: preserve-3d;
+
+    }
+    .travel .business:hover{
+        transform:translateZ(10px) rotateX(20deg)  rotateY(30deg);
+        }
+        .travel .business.active{
+            width: 350px;
+            transition:all 200ms ease-out;
+            border-radius:10px;
+            
+            }
+
+.makeup{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    background:#F5F5F5;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.make{
+    transition:all 200ms ease-out;
+    border-radius:4px;
+   
+}
+.make-img{
+    transition:all 200ms ease-out;
+    border-radius:4px;
+    
+    transform-style: preserve-3d;
+}
+.make .make-img:hover{
+    transform:translateZ(10px) rotateX(20deg)  rotateY(30deg) ;
+    }
+.makeup .make-img.active{
+    width: 350px;
+    transition:all 200ms ease-out;
+    border-radius:10px;
+    }
+    .fashion{
+        display: flex;      
+        justify-content: space-between;
+        
+        background:#F5F5F5;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .look{
+        transition:all 200ms ease-out;
+        border-radius:4px;
+    }
+
+    .fashion-img{
+        transition:all 200ms ease-out;
+        border-radius:4px;
+    }
+    .fashion .fashion-img:hover{
+    transform:translateZ(10px) rotateX(20deg)  rotateY(30deg) ;
+    }
+    .fashion .fashion-img.active{
+        width: 350px;
+        transition:all 200ms ease-out;
+        border-radius:10px;
+        }
+
+        .look{
+            transition:all 200ms ease-out;
+            border-radius:4px;
+        }
+    
+        .book .hobbies-img{
+            transition:all 200ms ease-out;
+            border-radius:4px;
+        }
+        .book .hobbies-img:hover{
+            
+        transform:translateZ(10px) rotateX(20deg)  rotateY(30deg) ;
+        }
+        .book .hobbies-img.active{
+            width: 350px;
+            transition:all 200ms ease-out;
+            border-radius:10px;
+            }
+            
+        
+
+.fade{
+    max-width: 700px;  
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+  .fade img{
+    margin: 0 auto;
+    
+  }
+
+  .slick-prev::before {
+    content: attr();
+    background: red;
+    border-radius:19px;
+    position: absolute;
+  }
+  
+  .slick-next::before {
+    content: attr();
+    background: red;
+    border-radius:19px;
+    position: absolute;
+  }
+
+  
+
+@keyframes insta{
+    0%{
+        box-shadow: 0 0 15px #A64B2A,
+        0 0 15px #ff4400;
+    } 
+}
+
+@media (max-width: 789px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+   .travel{
+       flex-direction: column;
+       text-align: center;
+   }
+   .fashion{
+    flex-direction: column;
+    text-align: center;
+   }
+}
+@media (max-width: 789px){
+    .fade{
+        max-width: 250px;  
+        margin: 0 auto;
+        margin-top: 50px;
+        
+    }
+    .fade img{
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+      }
+      header h1{
+        color: #fff;
+        font-size: 3rem;
+        font-family: 'Square Peg', cursive;
+    }
+  
+    .container .my-photo{
+        border-radius:100%;
+        width: 200px;
+        background:#0b1704;
+        text-align: center;
+        margin-left:35px;
+    }
+    .container .my-photo img{
+        width: 200px
+     }
+    
+   
+
+ }
+
+  
