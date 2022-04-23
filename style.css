@@ -233,7 +233,9 @@ border-radius:10px;
             border-radius:10px;
             }
             
-        
+  .gallery {
+         text-align: center;
+  }  
 
 .fade{
     max-width: 700px;  
@@ -247,17 +249,17 @@ border-radius:10px;
   }
 
   .slick-prev::before {
-    content: attr();
+    content: "";
     background: red;
-    border-radius:19px;
-    position: absolute;
+    border-radius:8px;
+   
   }
   
   .slick-next::before {
-    content: attr();
+    content:"";
     background: red;
-    border-radius:19px;
-    position: absolute;
+    border-radius:8px;
+    
   }
 
   
@@ -283,19 +285,20 @@ border-radius:10px;
     flex-direction: column;
     text-align: center;
    }
-}
-@media (max-width: 789px){
+
+   
     .fade{
-        max-width: 250px;  
+        max-width: 300px;  
         margin: 0 auto;
         margin-top: 50px;
         
     }
     .fade img{
-        margin: 0 auto;
-        width: 150px;
-        height: 150px;
-      }
+        max-width: 300px;  
+       
+        
+    }
+   
       header h1{
         color: #fff;
         font-size: 3rem;
@@ -313,8 +316,35 @@ border-radius:10px;
         width: 200px
      }
     
-   
+   @media (max-width: 621px){
+    .container .my-photo{
+        border-radius:100%;
+        width: 100px;
+        background:#0b1704;
+        text-align: center;
+        margin-left:35px;
+    }
+    .fade img{
+        max-width:300px;
+        
+      }
+    .container .my-photo img{
+        width: 100px
+     }
+   }
 
  }
 
-  
+ @media (max-width: 320px){
+    .fade{
+        max-width: 270px;  
+        margin: 0 auto;
+        margin-top: 50px;
+        
+    }
+    .fade img{
+        max-width: 270px;  
+       
+    
+ }
+}
