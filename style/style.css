@@ -9,11 +9,11 @@
     padding: 0;
 }
 body{
-    background:rgb(255, 255, 255);
+    background-image: linear-gradient(to right top, #19c4d4, #00b6f8, #009fff, #9775ff, #eb12c6);
    
 }
 .background-header{
-    background:#A64B2A;
+    background:#2a55a6;
     height: 100px;
 }
 header{
@@ -63,12 +63,15 @@ nav ul li{
 .container .my-photo{
     border-radius:100%;
     width: 300px;
+
     background:#0b1704;
     text-align: center;
     margin-left:35px;
 }
 .container .my-photo img{
-    width: 300px
+    width: 300px;
+    position: relative;
+    top: 2px;
  }
 .container .text-about{
     max-width:400px;
@@ -124,6 +127,8 @@ animation: insta2 5s infinite ;
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 40px;
+    text-align: center;
+    font-family: sans-serif;
 }
 .travel .sea-img{
   
@@ -168,6 +173,7 @@ border-radius:10px;
     background:#F5F5F5;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: sans-serif;
 }
 .make{
     transition:all 200ms ease-out;
@@ -191,10 +197,11 @@ border-radius:10px;
     .fashion{
         display: flex;      
         justify-content: space-between;
-        
         background:#F5F5F5;
         max-width: 1200px;
         margin: 0 auto;
+        text-align: center;
+        font-family: sans-serif;
     }
     .look{
         transition:all 200ms ease-out;
@@ -234,7 +241,10 @@ border-radius:10px;
             }
             
   .gallery {
+      margin-top: 90px;
          text-align: center;
+         font-family: sans-serif;
+         letter-spacing: 10px;
   }  
 
 .fade{
@@ -250,14 +260,14 @@ border-radius:10px;
 
   .slick-prev::before {
     content: "";
-    background: red;
+    background: rgb(51, 45, 45);
     border-radius:8px;
    
   }
   
   .slick-next::before {
     content:"";
-    background: red;
+    background: rgb(83, 78, 78);
     border-radius:8px;
     
   }
@@ -266,8 +276,8 @@ border-radius:10px;
 
 @keyframes insta{
     0%{
-        box-shadow: 0 0 15px #A64B2A,
-        0 0 15px #ff4400;
+        box-shadow: 0 0 15px #009fff,
+        0 0 15px #EB12C6;
     } 
 }
 

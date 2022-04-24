@@ -38,8 +38,9 @@ function digitacao(texto, contador) {
       saida.textContent += texto.charAt(contador);
       contador++;
       digitacao(texto, contador);
-    }, 89);
+    }, 180);
   }
 }
 
 digitacao("Junielly monte", 0);
+
