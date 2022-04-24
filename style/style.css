@@ -9,11 +9,11 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(to right top, #19c4d4, #00b6f8, #009fff, #9775ff, #eb12c6);
+    background:white;
    
 }
 .background-header{
-    background:#2a55a6;
+    background:#A64B2A;
     height: 100px;
 }
 header{
@@ -44,6 +44,11 @@ nav ul li{
     margin: 10px;
     color: white;
     font-family:sans-serif;
+}
+nav ul li:hover{
+   border-bottom: 1px solid;
+   padding-bottom: 9px;
+   transition:all 200ms ease-out;
 }
  .container{
      display: flex;
@@ -271,7 +276,33 @@ border-radius:10px;
     border-radius:8px;
     
   }
+footer{
+    background:#A64B2A;
+    font-family: sans-serif;
+    text-align: center;
+}
+footer .networks{
+    max-width:1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+footer .networks .fa-brands{
+    font-size: 36px;
 
+}
+footer .follow-me{
+    font-family: 'Square Peg', cursive;
+}
+footer .networks a{
+    text-decoration: none;
+    color:black;
+}
+footer .networks .fa-brands:hover{
+    transform: scale(1.15);
+    cursor:pointer;
+   transition: all 200ms ease-out;
+}
   
 
 @keyframes insta{
@@ -324,6 +355,10 @@ border-radius:10px;
     }
     .container .my-photo img{
         width: 200px
+     }
+     .container .text-about p{
+         font-size:0.9rem;
+         max-width:310px;
      }
     
    @media (max-width: 621px){
