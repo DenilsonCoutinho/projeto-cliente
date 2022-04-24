@@ -39,6 +39,7 @@ nav ul li{
 .container{
     display: flex;
     justify-content:center;
+    flex-direction:column;
     align-items: center;
     margin: 0 auto;
     margin-top: 90px;
@@ -51,10 +52,54 @@ nav ul li{
     border: 1px solid rgba(255, 255, 255, 0.141);
 }
 .about-me{
-    max-width:400px;
+    max-width:600px;
+    text-align: center;
     font-family: sans-serif;
 }
 
 .my-photo img{
-    border-radius: 50px;
+    border-radius: 10px;
+}
+.button{
+    max-width:1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+ .insta{
+    border:1px solid ;
+    color: #fff;
+    width: 150px;
+    height:50px;
+    border-radius:8px;
+    font-family: sans-serif;
+    font-size:15px;
+    background:#11120e;
+    padding-right: 3px;
+    margin-top:10px;
+    cursor:pointer;
+    animation: insta 1s infinite  ;
+    
+  
+}
+@keyframes insta{
+    0%{
+        box-shadow: 0 0 15px #009fff,
+        0 0 15px #EB12C6;
+    } 
+}
+@media (max-width: 668px){
+    .Name{
+        font-size:2rem;
+    }
+    .my-photo img{
+        width: 300px;
+    }
+}
+@media (max-width: 345px){
+    .Name{
+        font-size:1.6rem;
+    }
+    .my-photo img{
+        width: 250px;
+    }
 }
